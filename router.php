@@ -6,8 +6,11 @@ $routes = [
     '/' => 'controllers/index.php',
     '/about' => 'controllers/about.php',
     '/contact' => 'controllers/contact.php',
-];
-
+];  
+function abort1($code) {
+    http_response_code($code);  
+    return "views/{$code}.php";
+}
 function routeToController($uri, $routes) {
     if (array_key_exists($uri, $routes)) {
         require $routes[$uri];

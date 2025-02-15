@@ -3,6 +3,17 @@
 // $cost = 15;
 $heading = "Home";
 
+// echo (int) 12.5 . '<br>';
+// echo (int) 12.1 . '<br>';
+// echo (int) 12.9 . '<br>';
+// echo (int)-12.9 . '<br>';
+
+// $message = 'Hi';
+// $num = (int) $message;
+// echo $num; // 0
+// echo "<pre>";
+// var_dump($_SERVER);
+// echo "</pre>";
 // // dd($_SERVER);
 // // dd($heading);
 // // echo $_SERVER['REQUEST_URI']
@@ -55,7 +66,16 @@ $heading = "Home";
 //         'purchaseUrl' => 'http://example.com'
 //     ]
 // ];
+// function dd($value) {
+//     echo "<pre>";
+//     var_dump($value);
+//     echo "</pre>";
 
+//     die();
+// }
+// echo $_SERVER['REQUEST_URI'];
+// dd($heading);
+// dd($_SERVER); // dump and die
 // $filteredBooks = array_filter($books, function ($book) {
 //     return $book['author'] == 'Andy Weir';
 // });
@@ -63,4 +83,3 @@ $heading = "Home";
 // at the bottom
 
 require "views/index.view.php";
-    
